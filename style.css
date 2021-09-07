@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    font-family: Comic, sans-serif;
+    background: linear-gradient(90deg, #ff0195 0%, #00c3ff 100%);
+    font-size: 20px;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+a.toogleNav {
+    display: none;
+}
+
+header {
+    text-align: center;
+    margin: 20px;
+}
+
+header .logo {
+    width: 200px;
+}
+
+.flex-nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid ;
+}
+
+.flex-nav ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+.flex-nav ul li:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.flex-nav ul li a {
+    letter-spacing: 5px;
+}
+
+.social {
+    flex-grow: 1;
+}
+
+.asocial {
+    flex-grow:2;
+}
+
+section, footer {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+    text-align: center;
+    font-weight: 100;
+}
+
+section > h1, p {
+    margin: 10px;
+}
+
+section input {
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5%;
+    margin: 10px;
+    color: #00c3ff;
+}
+
+.banner img {
+    width: 100%;
+}
+
+@media all and (max-width: 1000px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    .flex-nav ul {
+        flex-wrap: wrap;
+    } 
+
+    .asocial {
+        flex-basis: 50%;
+    }  
+}
+
+@media all and (max-width: 500px) {
+    .asocial { 
+        flex-basis: 100%;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flex-nav { order: 1; }
+	header { order: 2;}
+	.content { order: 3;}
+	.sign-up { order: 4;}
+	.banner { order: 5}
+	footer { order: 6;}
+
+    a.toogleNav { 
+        display: block;
+        width: 100%;
+        text-align: center; 
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.2);
+    }
+    ul.dropdown-menu:not(.open) { display: none; }
+}

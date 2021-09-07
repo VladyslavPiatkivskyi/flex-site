@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox Site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header>
+            <a href="#">
+                <img class="logo" src="icon.png" alt="Logo">
+            </a>
+        </header>
+
+        <nav class="flex-nav">
+            <a href="#" class="toogleNav">≡ Menu</a>
+            <ul class="dropdown-menu">
+                <li class="asocial"><a href="#">Item 1</a></li>
+                <li class="asocial"><a href="#">Item 2</a></li>
+                <li class="asocial"><a href="#">Item 3</a></li>
+                <li class="asocial"><a href="#">Item 4</a></li>
+                <li class="asocial"><a href="#">Item 5</a></li>
+                <li class="asocial"><a href="#">Item 6</a></li>
+                <li class="social"><a href="#"><i class="fa fa-telegram"></i></a></li>
+                <li class="social"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li class="social"><a href="#"><i class="fa fa-github"></i></a></li>
+                <li class="social"><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </nav>
+
+        <section class="banner">
+            <img src="http://lorempixel.com/600/400" />
+        </section>
+        <section class="content">
+
+            <h3>Lorem</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, maxime unde rerum veritatis totam
+                labore dicta! Fugiat facilis recusandae, hic est consectetur repudiandae accusantium culpa voluptatum
+                consequuntur, inventore praesentium eius.
+                Laboriosam eaque vitae, omnis quas sequi ut magni molestias consequuntur rem nisi, quaerat quod nam
+                pariatur et inventore excepturi deserunt molestiae sint ea optio minus necessitatibus similique.
+                Ducimus, illo. Omnis.
+                Vero, iusto quis, eum explicabo, in nam error quidem ad itaque consequatur harum commodi. Ipsam, quidem
+                nemo aperiam explicabo laboriosam reiciendis sed ducimus non, magni culpa sit ad iure rerum.
+                Consequatur, corrupti exercitationem voluptatem esse in voluptatibus dignissimos quos quia neque ipsam
+                iste. Excepturi harum obcaecati iste natus deleniti repellat tempore dicta! Distinctio reprehenderit
+                alias vitae tempora fugiat architecto aliquid!
+                Quisquam voluptatibus assumenda laborum optio in, dicta ratione reprehenderit dolorum accusantium ipsum
+                nostrum? Provident quo eligendi nemo deleniti iste dolore, incidunt dicta? Corporis consequatur ducimus
+                deserunt error quo illo quia?
+            </p>
+        </section>
+        <section class="sign-up">
+            <form>
+                <input type="text" name="name" id="" placeholder="Enter name">
+                <input type="email" name="email" id="" placeholder="Enter email">
+                <input type="submit" value="Sign me up!">
+            </form>
+        </section>
+
+        <footer>
+            © Vladyslav Piatkivskyi
+        </footer>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('a.toogleNav').click(
+                function() {
+                    $('ul.dropdown-menu').toggleClass('open');
+                }
+            ); 
+        });
+    </script>
+
+</body>
+
+</html>
